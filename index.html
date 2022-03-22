@@ -9,34 +9,82 @@
     <title>Alex Noble-James</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1766d; position: sticky; top: 0px; z-index: 9999;">
-        <div class="container-fluid">
-          <a class="navbar-brand fw-bold" style="font-size: 30px;" href="/">Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" style="font-size: larger;" id="navbarNav">
-            <ul class="navbar-nav fw-bold">
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link active" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#carousel">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Reach Out</a>
-              </li>
-            </ul>
-          </div>
+      <header style="background-color: #f1766d; position: sticky; top: 0px; z-index: 9999;">
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="container-fluid">
+            <a class="navbar-brand fw-bold" style="font-size: 30px;" href="/">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" style="font-size: larger;" id="navbarNav">
+                <ul class="navbar-nav fw-bold">
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Reach Out</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav> 
+    </header>
+    
+
+    <h1 class="text-center my-3">Alex Noble-James</h1>
+    
+
+    <!-- Skills Cards -->
+
+    <h2 id="skills" class="text-center">My Skills</h2>
+
+    <div class="card mb-3 mx-auto border border-dark border-4" style="max-width: 80%;">
+        <div class="col-md-3 mx-auto p-3">
+            <img src="temp-images\vis-frontend-1.png" style="max-height: 250px;" class="img-fluid rounded-start" alt="...">
         </div>
-    </nav>
+        <div class="row g-0 justify-content-around">
+          <div class="col-md-10 ">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold" style="font-size: 23px;">Front End Development</h5>
+              <p class="card-text fw-bold lh-lg" style="font-size: 19px;">I have knowledge of HTML and CSS concepts including advanced CSS techniques such as using flexbox, CSS grid and CSS variables. <br>
+                I have experience working with CSS frameworks such as Bootstrap (used for this website) and Bulma and have built a project using mostly Bulma mixed with custom CSS styling.
+                <br>I also have experience with various JavaScript programming concepts such as Separation of Concerns, TDD, and OOP,<br>
+                an intermediate understanding of the DOM,<br>
+                as well as experience working with various third party (JQuery, etc.) and server-side RESTful APIs</p>
+              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+            </div>
+          </div>
+          
+        </div>
+    </div>
+    
+    <div class="card mb-3 mx-auto border border-dark border-4" style="max-width: 80%;">
+        <div class=" mx-auto p-3">
+            <img src="temp-images\node-express.webp" style="max-height: 200px;" class="img-fluid rounded-start" alt="...">
+            <!-- <img src="temp-images\js logo.png" style="max-height: 250px;" class="img-fluid rounded-start" alt="..."> -->
+        </div>
+        
+        <div class="row g-0 justify-content-around">
+            <div class="col-md-10 ">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-bold" style="font-size: 23px;">Back End Development</h5>
+                <p class="card-text fw-bold lh-lg" style="font-size: 17px;">I hav</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+              </div>
+            </div>
+        </div>
+    </div>
 
-    <h1 class="text-center">Alex Noble-James</h1>
+    <h2 id="projects" class="text-center my-5">What I've Worked On</h2>
+    <p class="text-center" style="font-size: 25px;">This is a showcase of various projects that serve as good examples of my skills. <br> I've either worked independently or have had a large hand in building them with a team.</p>
 
-    <div id="carousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 80%;">
+    <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 80%;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -82,7 +130,7 @@
                   </h5>
               <p class="fw-bold" style="font-size: 17px;">
                 This application utilizes Node.JS and Express.JS to create and manage a server
-                for a blog post sharing CMS style website.
+                for a blog post sharing, CMS style website.
                 <br />
                 This serves as a showcase for my server-side capabilities. <br>
                 The application utilizes various NPM packages such as: Express, Express-Session, Bcrypt for password hashing, Express-Handlebars for serving dynamic HTML, etc.
