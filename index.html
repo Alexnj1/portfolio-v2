@@ -64,10 +64,11 @@
     </section>
     
 
-    <!-- Skills Cards -->
+    <!-- SKILLS CARDS -->
 
     <h2 id="skills" class="text-center">My Skills</h2>
 
+    <!-- FRONT END -->
     <div class="card mb-3 mx-auto border border-dark border-4" style="max-width: 80%;">
         <div class="text-center col-lg-6 mx-auto p-3">
             <img id="f-dev" src="assets\photos\vis-frontend-1.png" style="max-height: 200px;" class="img-fluid rounded-start" alt="...">
@@ -76,42 +77,46 @@
           <div class="col-md-10 ">
             <div class="card-body text-center">
               <h5 class="card-title fw-bold" style="font-size: 23px;">Front End Development</h5>
-              <p class="card-text fw-bold lh-lg" style="font-size: 19px;">I have knowledge of HTML and CSS concepts including advanced CSS techniques such as using flexbox, CSS grid and CSS variables. 
+              <p id="f-end-info" class="line-clamp card-text fw-bold lh-lg" style="font-size: 19px;">I have knowledge of HTML and CSS concepts including advanced CSS techniques such as using flexbox, CSS grid and CSS variables. 
                 <br>I have experience working with CSS frameworks such as Bootstrap (used for this website) and Bulma and have built a project using mostly Bulma mixed with custom CSS styling.
                 <br>I also have experience with various JavaScript programming concepts such as Separation of Concerns, TDD, and OOP,
                 <br>an intermediate understanding of the DOM,
                 <br>as well as experience working with various third party (JQuery, etc.) and server-side RESTful APIs</p>
-              <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <button id="f-dev-view-more" class="btn" style="background-color: #f1766d;">View More</button>
             </div>
+            
           </div>
           
         </div>
     </div>
     
+    <!-- BACK END -->
     <div class="card mb-3 mx-auto border border-dark border-4" style="max-width: 80%;">
         <div class=" mx-auto p-3">
             <img src="assets\photos\node-express.webp" style="max-height: 200px;" class="img-fluid rounded-start" alt="...">
-            <!-- <img src="temp-images\js logo.png" style="max-height: 250px;" class="img-fluid rounded-start" alt="..."> -->
         </div>
         
         <div class="row g-0 justify-content-around">
             <div class="col-md-10 ">
               <div class="card-body text-center">
                 <h5 class="card-title fw-bold" style="font-size: 23px;">Back End Development</h5>
-                <p class="card-text fw-bold lh-lg" style="font-size: 19px;">I have experience with Node.JS and Express.JS to create and manipulate servers for web applications.
+                <p id="b-end-info" class="line-clamp card-text fw-bold lh-lg" style="font-size: 19px;">I have experience with Node.JS and Express.JS to create and manipulate servers for web applications.
                 <br> I have knowledge of the fundemental concepts of object-oriented programming and test driven development as they apply to JavaScript and server-side development.
                 <br> I have experience creating API routes to handle client-side HTTP requests and woking with relational databases to serve response data to those requests.
                 <br> I have foundational experience with with MySQL databases and using an ORM to modularize the query process.</p>
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <button id="b-dev-view-more" class="btn" style="background-color: #f1766d;">View More</button>
               </div>
             </div>
         </div>
     </div>
 
-    <h2 id="projects" class="text-center my-5">What I've Worked On</h2>
-    <p class="text-center mx-auto fw-bold" style="font-size: 25px;">This is a showcase of various projects that serve as good examples of my skills. <br> I've either worked independently or have had a large hand in building them with a team.</p>
+    <!-- PROJECTS -->
 
-    <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 80%;">
+    <h2 id="projects" class="text-center my-5 fw-bold">What I've Worked On</h2>
+    <p class="text-center mx-3 fw-bold" style="font-size: 25px;">This is a showcase of various projects that serve as good examples of my skills. <br> I've either worked independently or have had a large hand in building them with a team.</p>
+
+    <!-- PROJECT CAROUSEL -->
+    <div id="carouselExampleCaptions" class="carousel slide mx-auto" data-bs-ride="carousel" style="width: 90%;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -120,70 +125,26 @@
         <div class="carousel-inner rounded-3">
           <div class="carousel-item active border border-dark border-4">
             <img src="assets\photos\imbd.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5 class="fw-bold" style="font-size: 25px;"> 
-                    <span  class="mx-5">
-                        <a class="proj-button" target="_blank" style="color: white;" href="https://github.com/Alexnj1/imbd">[View on GitHub]</a>
-                    </span>
+            <div class="carousel-caption d-block">
+                <h5 class="proj-name fw-bold"> 
                     <u>IMBD</u>
-                    <span class="mx-5">
-                        <a class="proj-button" target="_blank" style="color: white;" href="https://alexnj1.github.io/imbd/">[View Deployed App]</a>
-                    </span> 
                 </h5>
-              <p class="fw-bold lh-lg" style="font-size: 17px;">
-                Built with HTML, CSS powered by the Bulma CSS framework and
-                JavaScript. Including the TMBD API and the TomTom API
-                <br />
-                IMBD is a movie database web application that utilizes the TMBD API
-                to provide a seamless and responsive movie research experience. "It's
-                Movie Night!"
-                <br />
-                Worked on the "Going out" sections of the application and was tasked
-                with ensuring mobile responsiveness
-              </p>
             </div>
           </div>
           <div class="carousel-item border border-dark border-4">
             <img src="assets\photos\tech_blog.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-dark lh-sm">
-                <h5 class="fw-bold" style="font-size: 25px;"> 
-                    <span class="mx-5">
-                        <a class="proj-button" target="_blank" href="https://github.com/Alexnj1/technology-blog">[View on GitHub]</a>
-                    </span> 
+            <div class="carousel-caption d-block text-dark">
+                <h5 class="fw-bold proj-name"> 
                     <u>Technology Blog</u>
-                    <span class="mx-5">
-                        <a class="proj-button" target="_blank" href="https://protected-eyrie-05356.herokuapp.com/home">[View Deployed App]</a>
-                    </span> 
-                  </h5>
-              <p class="fw-bold" style="font-size: 17px;">
-                This application utilizes Node.JS and Express.JS to create and manage a server
-                for a blog post sharing, CMS style website.
-                <br />
-                This serves as a showcase for my server-side capabilities. <br>
-                The application utilizes various NPM packages such as: Express, Express-Session, Bcrypt for password hashing, Express-Handlebars for serving dynamic HTML, etc.
-                <br />
-              </p>
+                </h5>
             </div>
           </div>
           <div class="carousel-item border border-dark border-4">
             <img src="assets\photos\weather.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption text-dark d-none d-md-block">
-              <h5 class="fw-bold" style="font-size: 25px;"> 
-                <span class="mx-5">
-                    <a class="proj-button" target="_blank" href="https://github.com/Alexnj1/weather-dashboard">[View on GitHub]</a>
-                </span>
-                <u>Weather Dashboard</u> 
-                <span class="mx-5">
-                    <a class="proj-button" target="_blank" href="https://alexnj1.github.io/weather-dashboard/">[View Deployed App]</a>
-                </span> 
-              </h5>
-              <p class="fw-bold" style="font-size: 17px;">
-                This online weather dashboard application allows the user to view weather conditions from cities all over the world.
-                <br />
-                Includes the ability to view both current weather data and a future five day forecast <br>
-                Also includes the ability for the user to store their last five searches and pull updated data from those searches.
-                <br />
-              </p>
+            <div class="carousel-caption d-block text-dark">
+                <h5 class="fw-bold proj-name" style="color: #e66e65;"> 
+                    <u>Weather Dashboard</u>
+                </h5>
             </div>
           </div>
         </div>
@@ -197,10 +158,100 @@
         </button>
     </div>
 
+    <!-- PROJECT DESCRIPTIONS -->
+
+    <section class="container">
+        <div class="row mx-auto justify-content-around">
+            <div class="card col-4 mx-3 my-4" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 25px;">IMBD</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Front End Development</h6>
+                    <p class="fw-bold lh-lg" style="font-size: 17px;">
+                        * Built with HTML, CSS powered by the Bulma CSS framework and
+                        JavaScript. Including the TMBD API and the TomTom API
+                        <br /><br>
+                        * IMBD is a movie database web application that utilizes the TMBD API
+                        to provide a seamless and responsive movie research experience. "It's
+                        Movie Night!"
+                        <br /><br>
+                        * I worked on the "Going out" sections of the application and was tasked
+                        with ensuring mobile responsiveness
+                    </p>
+                    <span  class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://github.com/Alexnj1/imbd">[View on GitHub]</a>
+                    </span>
+                    <br>
+                    <span class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://alexnj1.github.io/imbd/">[View App in New Tab]</a>
+                    </span> 
+                    <br><br>
+                    <button name="https://alexnj1.github.io/imbd/" class="btn app-view-btn" style="background-color: #f1766d;">View App</button>
+                </div>
+            </div>
+
+            <div class="card col-4 mx-3 my-4" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 25px;">Technology Blog</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Full Stack Development</h6>
+                    <p class="fw-bold lh-lg" style="font-size: 17px;">
+                        * This application utilizes Node.JS and Express.JS to create and manage a server
+                        for a blog post sharing, CMS style website.
+                        <br /><br> 
+                        * This serves as a showcase for my server-side capabilities. 
+                        <br><br> 
+                        * The application utilizes various NPM packages such as: Express, Express-Session, Bcrypt for password hashing, Express-Handlebars for serving dynamic HTML, etc.
+                        <br />
+                      </p>
+                    <span  class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://github.com/Alexnj1/technology-blog">[View on GitHub]</a>
+                    </span>
+                    <br>
+                    <span class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://protected-eyrie-05356.herokuapp.com/home">[View App in New Tab]</a>
+                    </span> 
+                    <br><br>
+                    <button name="https://protected-eyrie-05356.herokuapp.com/home" class="btn app-view-btn" style="background-color: #f1766d;">View App</button>
+                </div>
+            </div>
+
+            <div class="card col-4 mx-3 my-4" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 25px;">Weather Dashboard</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Front End Development</h6>
+                    <p class="fw-bold lh-lg" style="font-size: 17px;">
+                        * This online weather dashboard application allows the user to view weather conditions from cities all over the world.
+                        <br /><br>
+                        * Includes the ability to view both current weather data and a future five day forecast.
+                        <br><br>
+                        * Also includes the ability for the user to store their last five searches and pull updated data from those searches.
+                        <br />
+                    </p>
+                    <span  class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://github.com/Alexnj1/weather-dashboard">[View on GitHub]</a>
+                    </span>
+                    <br>
+                    <span class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://alexnj1.github.io/weather-dashboard/">[View App in New Tab]</a>
+                    </span> 
+                    <br><br>
+                    <button class="btn app-view-btn" name="https://alexnj1.github.io/weather-dashboard/" style="background-color: #f1766d;">View App</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mx-auto text-center">
+        <iframe class="d-none border border-dark border-3 rounded" style="height: 50rem; width: 80%;" src="https://alexnj1.github.io/portfolio-v2/" frameborder="0"></iframe>
+
+    </div>
+
+
+    <!-- REACH OUT -->
+
     <h2 id="reach-out" class="text-center my-5">Reach Out</h2>
 
     <div class="row mx-auto my-5" style="max-width: 80%;">
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 mb-5 text-center">
           <div class="card border border-dark border-3 rounded" style="height: 100%;">
             <div class="card-body">
               <h5 class="card-title mb-4 fw-bold">Contact Information</h5>
@@ -216,18 +267,20 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 text-center">
+        <div class="col-sm-6 mb-5 text-center">
           <div class="card border border-dark border-3 rounded" style="height: 100%;">
             <div class="card-body">
               <h5 class="card-title fw-bold">Connect With Me</h5>
               <p class="card-text fw-bold mt-4 mb-5">My Socials</p>
-              <a  href="mailto:alexnoble143.an@gmail.com" class="btn btn-primary"><img style="max-height: 50px;" src="assets\photos\Gmail-logo.png" alt=""><br> Gmail</a>
+              <a  href="mailto:alexnoble143.an@gmail.com" class="btn btn-primary m-3"><img style="max-height: 50px;" src="assets\photos\Gmail-logo.png" alt=""><br> Gmail</a>
               <a target="_blank" href="https://github.com/Alexnj1" class="btn btn-primary mx-2"><img class="mx-3" style="max-height: 50px;" src="assets\photos\GitHub-Mark-64px.png" alt=""><br> GitHub</a>
-              <a target="_blank" href="https://www.linkedin.com/in/alex-noble-james-b50139224" class="btn btn-primary"><img class="mx-3" style="max-height: 50px;" src="assets\photos\linked-in.png" alt=""><br> Linked In</a>
+              <a target="_blank" href="https://www.linkedin.com/in/alex-noble-james-b50139224" class="btn btn-primary m-3"><img class="mx-3" style="max-height: 50px;" src="assets\photos\linked-in.png" alt=""><br> Linked In</a>
             </div>
           </div>
         </div>
     </div>
+
+    <!-- FOOTER -->
 
     <footer>
         <div class="d-flex justify-content-between align-items-center">
@@ -247,5 +300,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./assets/script/button-handlers.js"></script>
   </body>
 </html>

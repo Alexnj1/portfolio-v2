@@ -11,6 +11,10 @@ a {
     color: black;
 }
 
+.proj-button {
+    color: #f5564b;
+}
+
 .proj-button:hover {
     color: #f1766d !important;
     font-size: 28px;
@@ -18,7 +22,7 @@ a {
 }
 
 footer {
-    height: 50px;
+    height: auto;
     background-color: #f1766d;
 }
 
@@ -30,6 +34,12 @@ footer {
     #intro {
         text-align: center;
     }
+
+    .proj-name {
+        font-size: 15px;
+    }
+
+    
 }
 
 @media screen and (min-width:576px) {
@@ -37,11 +47,40 @@ footer {
         max-height: 250px;
     }
 
-    /* #f-dev{
-        max-height: 300px;
-    } */
+    .proj-name {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .line-clamp {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+
+    .app-view-btn {
+        display: none;
+    }
 }
 
 @media screen and (min-width:768px) {
-    
+    .proj-name {
+        font-size: 35px;
+    }
+
+    #f-dev-view-more{
+        display: none;
+    }
+
+    #b-dev-view-more{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .proj-name {
+        font-size: 45px;
+    }
 }
