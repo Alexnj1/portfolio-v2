@@ -16,3 +16,8 @@ a {
     font-size: 28px;
     transition-duration: .2s;
 }
+
+footer {
+    height: 50px;
+    background-color: #f1766d;
+}
