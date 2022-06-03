@@ -80,8 +80,8 @@
               <h5 class="card-title fw-bold" style="font-size: 23px;">Front End Development</h5>
               <p id="f-end-info" class="line-clamp card-text fw-bold lh-lg" style="font-size: 19px;">I have knowledge of HTML and CSS concepts including advanced CSS techniques such as using flexbox, CSS grid, and CSS variables. 
                 <br>I have experience working with CSS frameworks such as Bootstrap (used for this website) and Bulma and have built a project using mostly Bulma mixed with custom CSS styling.
-                <br>I also have experience with various JavaScript programming concepts such as separation of concerns, TDD, and OOP,
-                <br>an intermediate understanding of the DOM,
+                <br>I also have experience with various JavaScript programming concepts such as separation of concerns, TDD, and OOP. 
+                <br>I have experience building responsive and performant websites with React.JS,
                 <br>as well as experience working with various third party libraries (JQuery, etc.) and server-side RESTful APIs</p>
                 <button id="f-dev-view-more" class="btn" style="background-color: #f1766d;">View More</button>
             </div>
@@ -105,7 +105,9 @@
                 <p id="b-end-info" class="line-clamp card-text fw-bold lh-lg" style="font-size: 19px;">I have experience with Node.JS and Express.JS to create and manipulate servers for web applications.
                 <br> I have knowledge of the fundamental concepts of object-oriented programming and test-driven development as they apply to JavaScript and server-side development.
                 <br> I have experience creating API routes to handle client-side HTTP requests and working with relational databases to serve response data to those requests.
-                <br> I have foundational experience with with MySQL databases and using an ORM to modularize the query process.</p>
+                <br> I have foundational experience with with MySQL databases and using an ORM to modularize the query process.
+                <br> I also have experience with GraphQL, MongoDB and Mongoose.</p>
+                
                 <button id="b-dev-view-more" class="btn" style="background-color: #f1766d;">View More</button>
               </div>
             </div>
@@ -124,9 +126,19 @@
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
         </div>
+        
         <div class="carousel-inner rounded-3">
-          <div class="carousel-item active border border-dark border-4">
+            <div class="carousel-item active border border-dark border-4">
+            <img src="assets\photos\eagle-fitness.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-block text-dark">
+                <h5 class="fw-bold proj-name"> 
+                    <u>Eagle-Fitness</u>
+                </h5>
+            </div>
+          </div>
+          <div class="carousel-item border border-dark border-4">
             <img src="assets\photos\imbd.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block">
                 <h5 class="proj-name fw-bold"> 
@@ -142,6 +154,7 @@
                 </h5>
             </div>
           </div>
+          
           <div class="carousel-item border border-dark border-4">
             <img src="assets\photos\tech_blog.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-block text-dark">
@@ -160,11 +173,11 @@
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon bg-dark rounded-3" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon bg-dark rounded-3" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
     </div>
@@ -173,6 +186,30 @@
 
     <section class="container">
         <div class="row mx-auto justify-content-around">
+            <div class="card col-4 mx-3 my-4" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: 25px;">Eagle-Fitness</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Full Stack Development</h6>
+                    <p class="fw-bold lh-lg" style="font-size: 17px;">
+                        * Utilizes React.JS to create a highly responsive, fitness-centric web application. Users can track their workouts in their calendar, have their own profile, statistics and a meal plan.
+                        <br /><br>
+                        * Makes use of a variety of libraries and NPM packages, such as React ApexCharts for workout statistics and Datepicker for workout scheduling.
+                        <br /><br>
+                        * Also makes use of mongoDB for storing models and data and mongoose and graphQL for querying data on the back end.
+                    </p>
+                    <span  class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://github.com/Alexnj1/eagle-fitness">[View on GitHub]</a>
+                    </span>
+                    <br>
+                    <span class="mx-1">
+                        <a class="proj-button" target="_blank" style="color: rgb(0, 0, 0);" href="https://eagle-fitness.herokuapp.com/">[View App in New Tab]</a>
+                    </span> 
+                    <br><br>
+                    <button name="https://eagle-fitness.herokuapp.com/" class="btn app-view-btn" style="background-color: #f1766d;">View App</button>
+                    <p class="d-none d-md-block text-muted">** Some of the application's functionality may not work in the iframe. Select [View App in New Tab] for a full demo.</p>
+                </div>
+            </div>
+
             <div class="card col-4 mx-3 my-4" style="width: 25rem;">
                 <div class="card-body">
                     <h5 class="card-title" style="font-size: 25px;">IMBD</h5>
